@@ -256,6 +256,83 @@ class Generator:
         
         return total_generated
 
+    def __generate_reserved_nfts(self, quota_total):
+        """
+        Generates reserved NFTs (1/1s and unique Gamba Dogs) in separate passes.
+        Step 1: Generate fixed reserved NFTs at their specified token IDs
+        Step 2: Generate random reserved NFTs sequentially after quota NFTs
+        """
+        if "reserved" not in self.config:
+            return 0
+        
+        reserved = self.config["reserved"]
+        total_reserved = 0
+        
+        # Find layer references
+        background_layer = None
+        jersey_layer = None
+        model_layer = None
+        headwear_layer = None
+        
+        for layer in self.config["layers"]:
+            layer_name_lower = layer["name"].lower()
+            if layer_name_lower == "background" or layer_name_lower == "backgrounds":
+                background_layer = layer
+            elif layer_name_lower in ["shirt", "jersey", "jerseys", "jerseys-shirts"]:
+                jersey_layer = layer
+            elif layer_name_lower == "model" or layer_name_lower == "models":
+                model_layer = layer
+            elif layer_name_lower == "headwear":
+                headwear_layer = layer
+        
+        if not all([background_layer, jersey_layer, model_layer, headwear_layer]):
+            self.logger.warning("Could not find all required layers for reserved NFTs. Skipping reserved generation.")
+            return 0
+        
+        # Step 1: Generate fixed reserved NFTs at their specified token IDs
+        if "fixed" in reserved and reserved["fixed"]:
+            self.logger.info("Generating %d fixed reserved NFTs (Batch 1)", len(reserved["fixed"]))
+            for entry in reserved["fixed"]:
+                token_id = entry["token_id"]
+                forced_traits = {
+                    background_layer["name"]: entry["background"],
+                    jersey_layer["name"]: entry["jersey"],
+                    model_layer["name"]: entry["model"],
+                    headwear_layer["name"]: entry["headwear"]
+                }
+                
+                self.__build_genome_metadata(token_id, forced_traits)
+                write_json(
+                    "{}/metadata/{}.json".format(self.output, token_id),
+                    self.all_genomes[-1],
+                )
+                total_reserved += 1
+        
+        # Step 2: Generate random reserved NFTs sequentially after quota NFTs
+        if "random" in reserved and reserved["random"]:
+            self.logger.info("Generating %d random reserved NFTs (Batch 2)", len(reserved["random"]))
+            # Start after quota NFTs
+            next_token_id = self.start_at + quota_total
+            
+            for entry in reserved["random"]:
+                forced_traits = {
+                    background_layer["name"]: entry["background"],
+                    jersey_layer["name"]: entry["jersey"],
+                    model_layer["name"]: entry["model"],
+                    headwear_layer["name"]: entry["headwear"]
+                }
+                
+                self.__build_genome_metadata(next_token_id, forced_traits)
+                write_json(
+                    "{}/metadata/{}.json".format(self.output, next_token_id),
+                    self.all_genomes[-1],
+                )
+                next_token_id += 1
+                total_reserved += 1
+        
+        self.logger.info("Generated %d reserved NFTs", total_reserved)
+        return total_reserved
+
     def generate(self):
         """
         Generates the NFTs with the given configuration.
@@ -285,6 +362,11 @@ class Generator:
         
         if self.use_quotas:
             total_generated = self.__generate_with_quotas()
+            
+            # Generate reserved NFTs if present in config
+            if "reserved" in self.config:
+                reserved_generated = self.__generate_reserved_nfts(total_generated)
+                total_generated += reserved_generated
         else:
             # Use standard weighted random generation
             max_combinations = calculate_possible_combinations(self.config)

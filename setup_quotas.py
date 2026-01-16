@@ -1,8 +1,11 @@
 """
 Script to generate config.json with quotas from the allocation table.
+Includes reserved NFTs (1/1s and unique Gamba Dogs).
 """
 
 import json
+import sys
+from setup_reserved import generate_reserved_section
 
 # Background name mapping (table name -> filename without .png)
 BACKGROUND_MAP = {
@@ -460,9 +463,26 @@ def generate_config():
             "amount": amount
         })
     
-    # Get unique backgrounds and shirts for layer definitions
+    # Get reserved NFT data
+    reserved = generate_reserved_section()
+    
+    # Get unique backgrounds - include GAMBA DOGS and SpicerQQ from reserved NFTs
     unique_backgrounds = sorted(set(BACKGROUND_MAP.values()))
+    # Add GAMBA DOGS and SpicerQQ if not already present
+    reserved_backgrounds = set()
+    for entry in reserved["fixed"] + reserved["random"]:
+        reserved_backgrounds.add(entry["background"])
+    unique_backgrounds = sorted(set(unique_backgrounds) | reserved_backgrounds)
+    
+    # Get unique shirts - include 1/1 jerseys and Egypt placeholder from reserved NFTs
     unique_shirts = sorted(set(shirt_name for _, _, _, shirt_name, _ in TABLE_DATA))
+    # Add 1/1 jerseys and Egypt from reserved NFTs
+    reserved_jerseys = set()
+    for entry in reserved["fixed"] + reserved["random"]:
+        reserved_jerseys.add(entry["jersey"])
+    # Add Egypt placeholder
+    reserved_jerseys.add("Egypt Jersey")
+    unique_shirts = sorted(set(unique_shirts) | reserved_jerseys)
     
     # Fix filename mismatches - ensure layer values match actual filenames
     jersey_filename_map = {}
@@ -471,6 +491,14 @@ def generate_config():
         if jersey == "V-Neck Orange":
             jersey_filename_map[jersey] = "V-Neck orange"  # File is lowercase
             jersey_filenames.append("V-Neck orange")
+        elif jersey == "Egypt Jersey":
+            # Placeholder - file doesn't exist yet
+            jersey_filename_map[jersey] = "Egypt Jersey"
+            jersey_filenames.append("Egypt Jersey")
+        elif jersey.endswith(" 1 of 1"):
+            # 1/1 jerseys - filename matches value
+            jersey_filename_map[jersey] = jersey
+            jersey_filenames.append(jersey)
         else:
             jersey_filename_map[jersey] = jersey
             jersey_filenames.append(jersey)
@@ -512,6 +540,7 @@ def generate_config():
             }
         ],
         "quotas": quotas,
+        "reserved": reserved,
         "incompatibilities": [],
         "baseURI": ".",
         "name": "Gamba Dog #",
@@ -523,9 +552,16 @@ def generate_config():
     with open("config.json", "w") as f:
         json.dump(config, f, indent=2)
     
+    # Configure stdout for Unicode on Windows
+    if sys.platform == "win32":
+        sys.stdout.reconfigure(encoding='utf-8')
+    
     print("Generated config.json")
     print(f"  - {len(quotas)} quota entries")
-    print(f"  - Total NFTs: {total_nfts}")
+    print(f"  - Total quota NFTs: {total_nfts}")
+    print(f"  - Reserved NFTs (fixed): {len(reserved['fixed'])}")
+    print(f"  - Reserved NFTs (random): {len(reserved['random'])}")
+    print(f"  - Total NFTs: {total_nfts + len(reserved['fixed']) + len(reserved['random'])}")
     print(f"  - Unique backgrounds: {len(unique_backgrounds)}")
     print(f"  - Unique shirts: {len(unique_shirts)}")
     

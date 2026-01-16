@@ -9,6 +9,7 @@ A customized NFT generation system built for the **Gamba Dogs** collection, feat
 This NFT generator has been customized specifically for the Gamba Dogs collection with the following features:
 
 - **Quota-Based Generation**: Generate exact counts for each Background+Jersey combination
+- **Reserved NFTs**: Support for 1/1s and unique "Gamba Dogs" NFTs with fixed or sequential token IDs
 - **Precise Layer Stacking**: Background → Model → Jersey → Headwear (bottom to top)
 - **Test Mode**: Automatically uses weighted random generation for small test batches
 - **Symbol Support**: Includes `symbol` field in metadata (GMB)
@@ -41,10 +42,16 @@ python -m pip install -r requirements.txt
    python main.py generate --config config.json --amount 5 --output ./test-output --start-at 8000
    ```
 
-3. **Generate full collection:**
+3. **Generate full collection (including reserved NFTs):**
    ```bash
    python main.py generate --config config.json --amount 1965 --output ./output --start-at 8000
    ```
+   
+   This will automatically generate:
+   - 1,965 quota NFTs (starting at token ID 8000)
+   - 16 fixed reserved NFTs at their specified token IDs (9000-9999 range)
+   - 16 random reserved NFTs sequentially after quota NFTs
+   - **Total: 1,997 NFTs**
 
 ## CLI Commands
 
@@ -146,6 +153,47 @@ The quota system allows you to specify exact counts for each Background+Jersey c
 
 **Total NFTs from quotas:** 1,965 NFTs
 
+### Reserved NFTs (1/1s and Uniques)
+
+The generator supports reserved NFTs that are generated separately from quota NFTs:
+
+```json
+"reserved": {
+  "fixed": [
+    {
+      "token_id": 9999,
+      "background": "SpicerQQ",
+      "jersey": "Georgia Jersey",
+      "model": "Black",
+      "headwear": "White Cap",
+      "type": "1/1",
+      "id": "9999"
+    }
+  ],
+  "random": [
+    {
+      "background": "BET IT LIKE",
+      "jersey": "Argentina 1 of 1",
+      "model": "Black",
+      "headwear": "No Cap",
+      "type": "1/1",
+      "id": "random"
+    }
+  ]
+}
+```
+
+**Generation Flow:**
+1. **Step 1**: Generate quota NFTs (1,965 NFTs starting at `--start-at`)
+2. **Step 2**: Generate fixed reserved NFTs at their specified token IDs (Batch 1: 9000-9999 range)
+3. **Step 3**: Generate random reserved NFTs sequentially after quota NFTs (Batch 2)
+
+**Reserved NFT Types:**
+- **Fixed**: Have a specific `token_id` assigned (e.g., 9999, 9000, 9393)
+- **Random**: Assigned token IDs sequentially after quota NFTs complete
+
+**Total Reserved NFTs:** 32 (16 fixed + 16 random)
+
 ### Test Mode
 
 When generating small batches for testing, the generator automatically switches to weighted random generation:
@@ -177,14 +225,14 @@ Each generated NFT includes:
 
 - **Models**: 3 variants (Black, White, Beige) - 33.3% distribution each
 - **Headwear**: 4 variants (White Cap, Black Cap, Grey Cap, No Cap) - 50% No Cap, 16.6% each cap
-- **Backgrounds**: 5 backgrounds (POOR, NFTs ARE DEAD, SOLANA, BET IT LIKE, ALLERGIC TO MONEY)
+- **Backgrounds**: 7 backgrounds (POOR, NFTs ARE DEAD, SOLANA, BET IT LIKE, ALLERGIC TO MONEY, GAMBA DOGS, SpicerQQ)
 - **Jerseys/Shirts**: 117 unique jerseys and shirts
 
 ### Batch Structure
 
-- **Batch 1**: Token IDs 9000-9999 (1,000 NFTs)
-- **Batch 2**: Token IDs 8000-8999 (1,000 NFTs)
-- **Total Collection**: 1,965 NFTs (from quotas) + 1/1s and uniques
+- **Batch 1**: Token IDs 9000-9999 (contains fixed reserved NFTs)
+- **Batch 2**: Token IDs 8000-8999 (contains quota NFTs + random reserved NFTs)
+- **Total Collection**: 1,997 NFTs (1,965 quota + 32 reserved)
 
 ### File Structure
 
@@ -218,10 +266,25 @@ trait-layers/
 
 ### `setup_quotas.py`
 
-Generates `config.json` with quotas from allocation table data. Run this to regenerate the config after updating quota data:
+Generates `config.json` with quotas and reserved NFTs from allocation table data. Run this to regenerate the config after updating quota or reserved NFT data:
 
 ```bash
 python setup_quotas.py
+```
+
+This script:
+- Generates quota entries from the allocation table
+- Includes reserved NFTs (1/1s and uniques) from `setup_reserved.py`
+- Adds GAMBA DOGS and SpicerQQ backgrounds
+- Adds all 1/1 jerseys
+- Includes Egypt Jersey placeholder
+
+### `setup_reserved.py`
+
+Generates reserved NFT entries from spreadsheet data. This is automatically called by `setup_quotas.py`, but can be run independently:
+
+```bash
+python setup_reserved.py
 ```
 
 ### `verify_setup.py`
@@ -231,6 +294,71 @@ Verifies all files referenced in `config.json` exist and validates the configura
 ```bash
 python verify_setup.py
 ```
+
+## How to Generate Your Collection
+
+### Step-by-Step Instructions
+
+1. **Verify Setup** (Recommended)
+   ```bash
+   python verify_setup.py
+   ```
+   This checks that all trait files exist and the configuration is valid.
+
+2. **Validate Configuration**
+   ```bash
+   python main.py validate --config config.json --amount 1965
+   ```
+   This ensures your `config.json` is properly formatted.
+
+3. **Test Generation** (Optional but Recommended)
+   ```bash
+   python main.py generate --config config.json --amount 5 --output ./test-output --start-at 8000
+   ```
+   This generates 5 test NFTs to verify everything works. Check the output in `./test-output/`.
+
+4. **Generate Full Collection**
+   ```bash
+   python main.py generate --config config.json --amount 1965 --output ./output --start-at 8000
+   ```
+   
+   **What this does:**
+   - Generates 1,965 quota NFTs (token IDs 8000-9964)
+   - Generates 16 fixed reserved NFTs at their specified IDs (9000-9999 range)
+   - Generates 16 random reserved NFTs sequentially (token IDs 9965-9980)
+   - **Total: 1,997 NFTs**
+
+5. **Check Output**
+   - Images: `./output/images/` (1,997 PNG files)
+   - Metadata: `./output/metadata/` (1,997 JSON files)
+   - All metadata: `./output/metadata/all-objects.json` (complete collection)
+
+### Important Notes
+
+- **Starting Token ID**: Use `--start-at 8000` for Batch 2. The generator will automatically handle reserved NFTs in the 9000-9999 range.
+- **Amount Parameter**: Always use `1965` (the quota total). Reserved NFTs are generated automatically.
+- **Output Directory**: Change `./output` to your desired output path.
+- **Generation Time**: Full collection generation takes approximately 5-10 minutes depending on your system.
+
+### After Generation
+
+1. Verify all files were created:
+   ```bash
+   # Count images
+   dir output\images\*.png | find /c ".png"
+   
+   # Count metadata
+   dir output\metadata\*.json | find /c ".json"
+   ```
+   Should show 1,997 for both.
+
+2. Check specific reserved NFTs:
+   - Fixed reserved: Check token IDs 9000, 9090, 9223, 9393, 9696, 9876, 9991-9999
+   - Random reserved: Check token IDs 9965-9980
+
+3. Verify metadata structure:
+   - Open any JSON file in `output/metadata/`
+   - Ensure it has `token_id`, `name`, `description`, `symbol`, `image`, and `attributes`
 
 ## Troubleshooting
 
@@ -269,6 +397,14 @@ Unlike standard weighted random generation, the quota system ensures:
 - Predictable distribution matching allocation tables
 - Support for complex rarity distributions
 
+### Reserved NFT System
+
+The reserved NFT system handles special NFTs separately from quota generation:
+- **Fixed Reserved NFTs**: Generated at their specified token IDs (e.g., 9999, 9000)
+- **Random Reserved NFTs**: Generated sequentially after quota NFTs complete
+- **Automatic Generation**: Reserved NFTs are generated automatically when quotas are used
+- **No Manual Configuration**: All reserved NFTs are defined in `config.json` under the `reserved` section
+
 ### Automatic Test Mode
 
 Small test batches automatically use weighted random generation, allowing you to:
@@ -276,6 +412,8 @@ Small test batches automatically use weighted random generation, allowing you to
 - Verify layer stacking
 - Check metadata structure
 - Without generating the full 1,965 NFT collection
+
+**Note**: Test mode bypasses both quotas and reserved NFTs. To test reserved NFTs, generate at least 100 NFTs.
 
 ### Symbol Field
 
