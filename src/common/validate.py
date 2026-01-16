@@ -17,6 +17,13 @@ def validate_config(config: dict) -> bool:
             [list, list, str, str, str],
         )
     )
+    
+    # quotas is optional, but if present must be a list
+    if "quotas" in config:
+        if not isinstance(config["quotas"], list):
+            raise ConfigValidationError(
+                "Invalid configuration value: 'quotas'. Expected type: list"
+            )
     required_layer_values = list(
         zip(
             ["name", "values", "trait_path", "filename", "weights"],
@@ -201,3 +208,26 @@ def validate_config(config: dict) -> bool:
                             [layer["name"] for layer in config["layers"]],
                         )
                     )
+    
+    # validate quotas if present
+    if "quotas" in config:
+        layer_names = [layer["name"] for layer in config["layers"]]
+        for i, quota in enumerate(config["quotas"]):
+            if not isinstance(quota, dict):
+                raise ConfigValidationError(
+                    'config["quotas"][{}]: Invalid quota. Expected type: dict'.format(i)
+                )
+            
+            required_quota_keys = ["background", "shirt", "amount"]
+            for key in required_quota_keys:
+                if key not in quota:
+                    raise ConfigValidationError(
+                        'config["quotas"][{}]: Missing required quota key: \'{}\''.format(i, key)
+                    )
+            
+            if not isinstance(quota["amount"], int) or quota["amount"] < 0:
+                raise ConfigValidationError(
+                    'config["quotas"][{}]: Invalid quota amount: {}. Expected non-negative integer'.format(
+                        i, quota["amount"]
+                    )
+                )

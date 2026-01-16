@@ -2,38 +2,2517 @@
   "layers": [
     {
       "name": "Background",
-      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
+      "values": [
+        "ALLERGIC TO MONEY",
+        "BET IT LIKE",
+        "NFTs ARE DEAD",
+        "POOR",
+        "SOLANA"
+      ],
       "trait_path": "./trait-layers/backgrounds",
-      "filename": ["blue", "orange", "purple", "red", "yellow"],
-      "weights": [20.0,20.0,20.0,20.0,20.0]
+      "filename": [
+        "ALLERGIC TO MONEY",
+        "BET IT LIKE",
+        "NFTs ARE DEAD",
+        "POOR",
+        "SOLANA"
+      ],
+      "weights": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ]
     },
     {
-      "name": "Foreground",
-      "values": ["Python Logo", "Python Logo 2", "Python Logo 3", "Python Logo 4", "Python Logo 5"],
-      "trait_path": "./trait-layers/foreground",
-      "filename": ["logo", "logo", "logo", "logo", "logo"],
-      "weights": [20,20,20,20,20]
+      "name": "Model",
+      "values": [
+        "Black",
+        "White",
+        "Beige"
+      ],
+      "trait_path": "./trait-layers/MODELS",
+      "filename": [
+        "BLACK",
+        "GREY",
+        "BEIGE"
+      ],
+      "weights": [
+        33.33,
+        33.33,
+        33.34
+      ]
     },
     {
-      "name": "Branding",
-      "values": ["A Name", "Another Name"],
-      "trait_path": "./trait-layers/text",
-      "filename": ["text", "text"],
-      "weights": [50, 50]
-    }
-  ],
-  "incompatibilities": [
+      "name": "Jersey",
+      "values": [
+        "Algeria Jersey",
+        "Argentina Jersey",
+        "Australia Jersey",
+        "Austria Jersey",
+        "Basic Blue",
+        "Basic Brown",
+        "Basic Dark Blue",
+        "Basic Green",
+        "Basic Grey",
+        "Basic Light Blue",
+        "Basic Magenta",
+        "Basic Mint",
+        "Basic Pink",
+        "Basic Purple",
+        "Basic Red",
+        "Basic Sky Blue",
+        "Basic Yellow",
+        "Belgium Jersey",
+        "Brazil Jersey",
+        "Canada Jersey",
+        "Cape Verde Jersey",
+        "China Jersey",
+        "Colombia Jersey",
+        "Croatia Jersey",
+        "Curacao Jersey",
+        "Czech Jersey",
+        "Ecuador Jersey",
+        "England Jersey",
+        "France Jersey",
+        "Georgia Jersey",
+        "Germany Jersey",
+        "Ghana Jersey",
+        "Haiti Jersey",
+        "Holland Jersey",
+        "Hungary Jersey",
+        "Iran Jersey",
+        "Italy Jersey",
+        "Ivory Coast Jersey",
+        "Japan Jersey",
+        "Jordan Jersey",
+        "Mexico Jersey",
+        "Morocco Jersey",
+        "New Zealand Jersey",
+        "Nigeria Jersey",
+        "Norway Jersey",
+        "Panama Jersey",
+        "Paraguay Jersey",
+        "Poland Jersey",
+        "Polo Black",
+        "Polo Black&White",
+        "Polo Blue",
+        "Polo Blue&Red",
+        "Polo Blue&White",
+        "Polo Blue&Yellow",
+        "Polo Brown",
+        "Polo Dark Blue",
+        "Polo Dark Grey",
+        "Polo Green",
+        "Polo Green&White",
+        "Polo Grey",
+        "Polo Light Blue",
+        "Polo Lime",
+        "Polo Magenta",
+        "Polo Mint",
+        "Polo Orange",
+        "Polo Pink",
+        "Polo Purple",
+        "Polo Red",
+        "Polo Red&Black",
+        "Polo Red&White",
+        "Polo Red&Yellow",
+        "Polo Turquoise",
+        "Polo White",
+        "Polo White&Black",
+        "Polo White&Blue",
+        "Polo White&Red",
+        "Polo Yellow",
+        "Portugal Jersey",
+        "Russia Jersey",
+        "Saudi Arabia Jersey",
+        "Scotland Jersey",
+        "Senegal Jersey",
+        "Serbia Jersey",
+        "South Africa Jersey",
+        "South Korea Jersey",
+        "Spain Jersey",
+        "Striped Blue",
+        "Striped Green",
+        "Striped Light Blue",
+        "Striped Lime",
+        "Striped Mint",
+        "Striped Neon",
+        "Striped Pink",
+        "Striped Purple",
+        "Striped Red",
+        "Striped Sky Blue",
+        "Striped Turquoise",
+        "Striped Yellow",
+        "Sweden Jersey",
+        "Switzerland Jersey",
+        "Thailand Jersey",
+        "Tunesia Jersey",
+        "Turkey Jersey",
+        "USA Jersey",
+        "Uruguay Jersey",
+        "Uzbekistan Jersey",
+        "V-Neck Blue",
+        "V-Neck Light Blue",
+        "V-Neck Magenta",
+        "V-Neck Mint",
+        "V-Neck Orange",
+        "V-Neck Pink",
+        "V-Neck Purple",
+        "V-Neck Red",
+        "V-Neck Turquoise",
+        "V-Neck White",
+        "V-Neck Yellow"
+      ],
+      "trait_path": "./trait-layers/JERSEYS-SHIRTS",
+      "filename": [
+        "Algeria Jersey",
+        "Argentina Jersey",
+        "Australia Jersey",
+        "Austria Jersey",
+        "Basic Blue",
+        "Basic Brown",
+        "Basic Dark Blue",
+        "Basic Green",
+        "Basic Grey",
+        "Basic Light Blue",
+        "Basic Magenta",
+        "Basic Mint",
+        "Basic Pink",
+        "Basic Purple",
+        "Basic Red",
+        "Basic Sky Blue",
+        "Basic Yellow",
+        "Belgium Jersey",
+        "Brazil Jersey",
+        "Canada Jersey",
+        "Cape Verde Jersey",
+        "China Jersey",
+        "Colombia Jersey",
+        "Croatia Jersey",
+        "Curacao Jersey",
+        "Czech Jersey",
+        "Ecuador Jersey",
+        "England Jersey",
+        "France Jersey",
+        "Georgia Jersey",
+        "Germany Jersey",
+        "Ghana Jersey",
+        "Haiti Jersey",
+        "Holland Jersey",
+        "Hungary Jersey",
+        "Iran Jersey",
+        "Italy Jersey",
+        "Ivory Coast Jersey",
+        "Japan Jersey",
+        "Jordan Jersey",
+        "Mexico Jersey",
+        "Morocco Jersey",
+        "New Zealand Jersey",
+        "Nigeria Jersey",
+        "Norway Jersey",
+        "Panama Jersey",
+        "Paraguay Jersey",
+        "Poland Jersey",
+        "Polo Black",
+        "Polo Black&White",
+        "Polo Blue",
+        "Polo Blue&Red",
+        "Polo Blue&White",
+        "Polo Blue&Yellow",
+        "Polo Brown",
+        "Polo Dark Blue",
+        "Polo Dark Grey",
+        "Polo Green",
+        "Polo Green&White",
+        "Polo Grey",
+        "Polo Light Blue",
+        "Polo Lime",
+        "Polo Magenta",
+        "Polo Mint",
+        "Polo Orange",
+        "Polo Pink",
+        "Polo Purple",
+        "Polo Red",
+        "Polo Red&Black",
+        "Polo Red&White",
+        "Polo Red&Yellow",
+        "Polo Turquoise",
+        "Polo White",
+        "Polo White&Black",
+        "Polo White&Blue",
+        "Polo White&Red",
+        "Polo Yellow",
+        "Portugal Jersey",
+        "Russia Jersey",
+        "Saudi Arabia Jersey",
+        "Scotland Jersey",
+        "Senegal Jersey",
+        "Serbia Jersey",
+        "South Africa Jersey",
+        "South Korea Jersey",
+        "Spain Jersey",
+        "Striped Blue",
+        "Striped Green",
+        "Striped Light Blue",
+        "Striped Lime",
+        "Striped Mint",
+        "Striped Neon",
+        "Striped Pink",
+        "Striped Purple",
+        "Striped Red",
+        "Striped Sky Blue",
+        "Striped Turquoise",
+        "Striped Yellow",
+        "Sweden Jersey",
+        "Switzerland Jersey",
+        "Thailand Jersey",
+        "Tunesia Jersey",
+        "Turkey Jersey",
+        "USA Jersey",
+        "Uruguay Jersey",
+        "Uzbekistan Jersey",
+        "V-Neck Blue",
+        "V-Neck Light Blue",
+        "V-Neck Magenta",
+        "V-Neck Mint",
+        "V-Neck orange",
+        "V-Neck Pink",
+        "V-Neck Purple",
+        "V-Neck Red",
+        "V-Neck Turquoise",
+        "V-Neck White",
+        "V-Neck Yellow"
+      ],
+      "weights": [
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547,
+        0.8547008547008547
+      ]
+    },
     {
-      "layer": "Background",
-      "value": "Blue",
-      "incompatible_with": ["Python Logo 2"],
-      "default": {
-        "value": "Default Incompatibility",
-        "filename": "./trait-layers/foreground/logo"
-      }
+      "name": "Headwear",
+      "values": [
+        "White Cap",
+        "Black Cap",
+        "Grey Cap",
+        "No Cap"
+      ],
+      "trait_path": "./trait-layers/HEADWEAR",
+      "filename": [
+        "White Cap",
+        "Black Cap",
+        "Grey Cap",
+        "No Cap"
+      ],
+      "weights": [
+        16.67,
+        16.67,
+        16.66,
+        50.0
+      ]
     }
   ],
+  "quotas": [
+    {
+      "background": "POOR",
+      "shirt": "Basic Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Brown",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Dark Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Green",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Grey",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Light Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Magenta",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Mint",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Pink",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Purple",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Red",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Sky Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Basic Yellow",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Black&White",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Black",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Blue&Red",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Blue&White",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Blue&Yellow",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Brown",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Dark Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Dark Grey",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Green&White",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Green",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Grey",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Light Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Lime",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Magenta",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Mint",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Orange",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Pink",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Purple",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Red&Black",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Red&White",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Red&Yellow",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Red",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Turquoise",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo White&Black",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo White&Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo White&Red",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo White",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Polo Yellow",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Green",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Light Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Lime",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Mint",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Neon",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Pink",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Purple",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Red",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Turquoise",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Yellow",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "Striped Sky Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Light Blue",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Magenta",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Mint",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Orange",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Pink",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Purple",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Red",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Turquoise",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck White",
+      "amount": 12
+    },
+    {
+      "background": "POOR",
+      "shirt": "V-Neck Yellow",
+      "amount": 12
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Argentina Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Germany Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Brazil Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Italy Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Spain Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "France Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "England Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Portugal Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "USA Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Japan Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Holland Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Mexico Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Canada Jersey",
+      "amount": 7
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Belgium Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Croatia Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Morocco Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Nigeria Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Poland Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Sweden Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Switzerland Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Turkey Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Uruguay Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Algeria Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Ghana Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Serbia Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Colombia Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Hungary Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "South Korea Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Senegal Jersey",
+      "amount": 6
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Australia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Panama Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Tunesia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Norway Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Scotland Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Saudi Arabia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Ecuador Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Ivory Coast Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "South Africa Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Paraguay Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Austria Jersey",
+      "amount": 5
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Jordan Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Iran Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Uzbekistan Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Curacao Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Cape Verde Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "New Zealand Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Haiti Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "China Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Russia Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Georgia Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Czech Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Thailand Jersey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Brown",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Dark Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Green",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Grey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Light Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Magenta",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Mint",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Pink",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Purple",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Red",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Sky Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Basic Yellow",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Black&White",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Black",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Blue&Red",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Blue&White",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Blue&Yellow",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Brown",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Dark Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Dark Grey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Green&White",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Green",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Grey",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Light Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Lime",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Magenta",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Mint",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Orange",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Pink",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Purple",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Red&Black",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Red&White",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Red&Yellow",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Red",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Turquoise",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo White&Black",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo White&Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo White&Red",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo White",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Polo Yellow",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Green",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Light Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Lime",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Mint",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Neon",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Pink",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Purple",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Red",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Turquoise",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Yellow",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "Striped Sky Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Light Blue",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Magenta",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Mint",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Orange",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Pink",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Purple",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Red",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Turquoise",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck White",
+      "amount": 4
+    },
+    {
+      "background": "NFTs ARE DEAD",
+      "shirt": "V-Neck Yellow",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Germany Jersey",
+      "amount": 6
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Brazil Jersey",
+      "amount": 6
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Argentina Jersey",
+      "amount": 6
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "England Jersey",
+      "amount": 6
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "France Jersey",
+      "amount": 6
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Spain Jersey",
+      "amount": 6
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Italy Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Turkey Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Russia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Portugal Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Holland Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Mexico Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "USA Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Japan Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Belgium Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Croatia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Uruguay Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Colombia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "South Korea Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Morocco Jersey",
+      "amount": 5
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Nigeria Jersey",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Poland Jersey",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Sweden Jersey",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Switzerland Jersey",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Serbia Jersey",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Austria Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Ghana Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Senegal Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Australia Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "China Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Iran Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Canada Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Russia Jersey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Brown",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Dark Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Green",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Grey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Light Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Magenta",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Mint",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Pink",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Purple",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Red",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Sky Blue",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Basic Yellow",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Black&White",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Black",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Blue&Red",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Blue&White",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Blue&Yellow",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Blue",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Brown",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Dark Blue",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Dark Grey",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Green&White",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Green",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Grey",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Light Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Lime",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Magenta",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Mint",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Orange",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Pink",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Purple",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Red&Black",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Red&White",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Red&Yellow",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Red",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Turquoise",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo White&Black",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo White&Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo White&Red",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo White",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Polo Yellow",
+      "amount": 4
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Green",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Light Blue",
+      "amount": 2
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Lime",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Mint",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Neon",
+      "amount": 2
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Pink",
+      "amount": 2
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Purple",
+      "amount": 2
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Red",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Turquoise",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Yellow",
+      "amount": 2
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "Striped Sky Blue",
+      "amount": 2
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Light Blue",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Magenta",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Mint",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Orange",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Pink",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Purple",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Red",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Turquoise",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck White",
+      "amount": 3
+    },
+    {
+      "background": "SOLANA",
+      "shirt": "V-Neck Yellow",
+      "amount": 3
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Germany Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Brazil Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Argentina Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "England Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "France Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Spain Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Italy Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Turkey Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Russia Jersey",
+      "amount": 6
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Portugal Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Holland Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Mexico Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "USA Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Japan Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Belgium Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Croatia Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Uruguay Jersey",
+      "amount": 5
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Colombia Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "South Korea Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Morocco Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Nigeria Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Canada Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Poland Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Sweden Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Switzerland Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Serbia Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Austria Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Ghana Jersey",
+      "amount": 4
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Senegal Jersey",
+      "amount": 3
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Australia Jersey",
+      "amount": 3
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Iran Jersey",
+      "amount": 3
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Brown",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Dark Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Green",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Grey",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Light Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Magenta",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Mint",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Pink",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Purple",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Red",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Sky Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Basic Yellow",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Black&White",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Black",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Blue&Red",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Blue&White",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Blue&Yellow",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Brown",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Dark Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Dark Grey",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Green&White",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Grey",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Light Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Magenta",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Orange",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Pink",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Purple",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Red&Yellow",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Red",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo Turquoise",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo White&Black",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo White&Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo White&Red",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Polo White",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Striped Red",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Striped Mint",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "Striped Turquoise",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Light Blue",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Magenta",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Mint",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Orange",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Pink",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Purple",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Red",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Turquoise",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck White",
+      "amount": 1
+    },
+    {
+      "background": "BET IT LIKE",
+      "shirt": "V-Neck Yellow",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Germany Jersey",
+      "amount": 5
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Brazil Jersey",
+      "amount": 5
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Argentina Jersey",
+      "amount": 5
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "England Jersey",
+      "amount": 5
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "France Jersey",
+      "amount": 4
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Spain Jersey",
+      "amount": 4
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Italy Jersey",
+      "amount": 3
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Turkey Jersey",
+      "amount": 3
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Russia Jersey",
+      "amount": 3
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Portugal Jersey",
+      "amount": 3
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Holland Jersey",
+      "amount": 2
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Mexico Jersey",
+      "amount": 2
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "USA Jersey",
+      "amount": 2
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Japan Jersey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Belgium Jersey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Croatia Jersey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Uruguay Jersey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Brown",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Dark Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Green",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Grey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Light Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Mint",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Purple",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Red",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Sky Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Basic Yellow",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Black&White",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Black",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Blue&Red",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Blue&White",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Blue&Yellow",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Brown",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Dark Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Dark Grey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Green&White",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Green",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Grey",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Light Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Lime",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Mint",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Striped Red",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Striped Mint",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Striped Turquoise",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Red&White",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo Red",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "Polo White",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "V-Neck Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "V-Neck Light Blue",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "V-Neck Mint",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "V-Neck Turquoise",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "V-Neck White",
+      "amount": 1
+    },
+    {
+      "background": "ALLERGIC TO MONEY",
+      "shirt": "V-Neck Yellow",
+      "amount": 1
+    }
+  ],
+  "incompatibilities": [],
   "baseURI": ".",
-  "name": "NFT #",
-  "description": "This is a description for this NFT series."
+  "name": "Gamba Dog #",
+  "description": "The most exclusive Gamba community.",
+  "symbol": "GMB"
 }

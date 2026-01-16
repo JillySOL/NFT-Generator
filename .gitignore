@@ -33,4 +33,8 @@ coverage.xml
 *metadata/*.json
 *images/*.png
 
+# Test outputs
+test-output/
+test-single/
+
 .DS_Store
